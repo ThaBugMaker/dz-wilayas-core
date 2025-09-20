@@ -5419,5 +5419,11 @@
     "name": "Ouled Sidi Mihoub",
     "wilaya_id": "48",
     "ar_name": "أولاد سيدي ميهوب"
-  }
+  },
+  {
+    "id":"1542",
+    "name": "Belassel Bouzegza",
+    "wilaya_id": "48",
+    "ar_name" : "بلعسل بوزڨزة"
+  },
 ]
