@@ -1,6 +1,6 @@
 # Build & source maps
-src/
-*.ts
+src/*.ts
+src/**/*.ts
 *.test.ts
 *.tsx
 *.map
@@ -12,6 +12,7 @@ tests/
 *.spec.ts
 *.test.ts
 __tests__/
+__test__/
 
 # Editor & system files
 .vscode/
