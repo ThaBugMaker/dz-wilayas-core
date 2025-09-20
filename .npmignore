@@ -1,5 +1,7 @@
 # Build & source maps
+src/
 *.ts
+*.test.ts
 *.tsx
 *.map
 tsconfig.json
