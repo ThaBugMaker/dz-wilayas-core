@@ -1,0 +1,26 @@
+# Build & source maps
+*.ts
+*.tsx
+*.map
+tsconfig.json
+vite.config.ts
+
+# Test files
+tests/
+*.spec.ts
+*.test.ts
+__tests__/
+
+# Editor & system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Lockfiles
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Git files
+.gitignore
