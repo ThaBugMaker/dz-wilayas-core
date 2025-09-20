@@ -1,6 +1,6 @@
 # dz-wilayas-core
 
-![npm](https://img.shields.io/npm/v/dz-wilayas-core?color=blue) ![license](https://img.shields.io/npm/l/dz-wilayas-core)
+![npm](https://img.shields.io/npm/v/dz-wilayas-core?color=blue) ![license](https://img.shields.io/npm/l/dz-wilayas-core?color=green)
 
 **A TypeScript library providing Algeria's wilayas and baladiyat data with utility classes for easy lookup, search, and integration in any JavaScript or TypeScript project.**
 
