@@ -114,3 +114,5 @@ All data is **preloaded from JSON** and typed for TypeScript.
 ## License
 
 This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+<p align="center">© 2025 ThaBugMaker All rights reserved.</p>
