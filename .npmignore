@@ -27,3 +27,4 @@ pnpm-lock.yaml
 
 # Git files
 .gitignore
+.github

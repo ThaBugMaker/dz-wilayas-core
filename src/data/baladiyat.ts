@@ -1,8 +1,8 @@
 /*!
- * dz-wilayas-core v1.0.0
+ * dz-wilayas-core v1.0.3
  * (c) 2025 ThaBugMaker
  * Released under the MIT License.
- * https://github.com/YourUsername/dz-wilayas-core
+ * https://github.com/ThaBugMaker/dz-wilayas-core
  */
 
 import rawBaladiyat from "./baladiyat-slim.json";
