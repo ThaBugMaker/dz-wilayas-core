@@ -1,6 +1,6 @@
 {
   "name": "dz-wilayas-core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A TypeScript library providing Algeria's wilayas and baladiyat data, with utility classes for easy lookup, search, and integration in any JavaScript or TypeScript project.",
   "author": "ThaBugMaker",
   "homepage": "https://github.com/ThaBugMaker/dz-wilayas-core#readme",
