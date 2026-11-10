@@ -1,0 +1,4 @@
+[build]
+  base = "docs"
+  command = "pnpm install --prod=false --frozen-lockfile && pnpm build"
+  publish = "dist"
