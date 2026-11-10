@@ -1,4 +1,4 @@
 [build]
   base = "docs"
-  command = "pnpm install --prod=false --frozen-lockfile && pnpm build"
+  command = "pnpm install --ignore-workspace --prod=false --frozen-lockfile && pnpm build"
   publish = "dist"
