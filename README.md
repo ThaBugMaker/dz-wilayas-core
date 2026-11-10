@@ -1,4 +1,5 @@
 # dz-wilayas-core 🇩🇿
+
 ![npm](https://img.shields.io/npm/v/dz-wilayas-core?color=white&style=for-the-badge&logo=npm&logoColor=white)
 ![npm downloads](https://img.shields.io/npm/dm/dz-wilayas-core?color=black&style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3LjIyIDExLjc2Ij48cG9seWdvbiBwb2ludHM9IjQuNTkgNC45NCA0LjU5IDAgMi42MiAwIDIuNjIgNC45NCAwIDQuOTQgMy4yOCA5LjUzIDcuMjIgNC45NCA0LjU5IDQuOTQiLz48cmVjdCB4PSIwLjExIiB5PSIxMC43NiIgd2lkdGg9IjciIGhlaWdodD0iMSIvPjwvc3ZnPg==&logoColor=white)
 ![license](https://img.shields.io/npm/l/dz-wilayas-core?&logoColor=orange&color=orange&style=for-the-badge&logo=open-source-initiative)
@@ -7,8 +8,6 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/ThaBugMaker/dz-wilayas-core?color=yellow&style=for-the-badge&logo=github&logoColor=yellow)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ThaBugMaker/dz-wilayas-core?&style=for-the-badge&logo=git&logoColor=F05032&color=F05032)
 ![GitHub issues](https://img.shields.io/github/issues/ThaBugMaker/dz-wilayas-core?color=red&style=for-the-badge&logo=github&logoColor=red)
-
-
 
 **A TypeScript library providing Algeria's wilayat and baladiyat data with utility classes for easy lookup, search, and integration in any JavaScript or TypeScript project.**
 
@@ -122,7 +121,7 @@ All data is **preloaded from JSON** and typed for TypeScript.
 
 <!-- --- -->
 
-<!-- 
+<!--
  ## 👥 Contributors
 
 <table>
@@ -135,7 +134,6 @@ All data is **preloaded from JSON** and typed for TypeScript.
     </td>
   </tr>
 </table> -->
-
 
 ---
 
@@ -152,12 +150,10 @@ All data is **preloaded from JSON** and typed for TypeScript.
   </tr>
 </table>
 
----
 ## 🙏 Credits
 
-- **Data source:** [Wilaya-Of-Algeria](https://github.com/AbderrahmeneDZ/Wilaya-Of-Algeria) by [AbderrahmeneDZ](https://github.com/AbderrahmeneDZ) and [yamanidev](https://github.com/yamanidev)
-
----
+- **Original data source:** [Wilaya-Of-Algeria](https://github.com/AbderrahmeneDZ/Wilaya-Of-Algeria) by [AbderrahmeneDZ](https://github.com/AbderrahmeneDZ) and [yamanidev](https://github.com/yamanidev).
+- **2025 - 2026 administrative update (69 wilayas):** [DZBuild – Algeria's 69 Wilayas List (2025 - 2026)](https://dzbuild.com/blog/algeria-69-wilayas-list-2025 - 2026), used as a reference for the CSV datasets.
 
 ## 📄 License
 
@@ -165,4 +161,4 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for d
 
 ---
 
-<p align="center">© 2025 ThaBugMaker All rights reserved.</p>
+<p align="center">© 2025 - 2026 ThaBugMaker All rights reserved.</p>
