@@ -1,30 +1,35 @@
-# Build & source maps
-src/*.ts
+# Source files (publish compiled library only)
 src/**/*.ts
 *.test.ts
-*.tsx
+*.spec.ts
 *.map
+
+# Development and test folders
+__test__/
+tests/
+test/
+__tests__/
+playground/
+
+# Build configuration
 tsconfig.json
 vite.config.ts
+pnpm-workspace.yaml
 
-# Test files
-tests/
-*.spec.ts
-*.test.ts
-__tests__/
-__test__/
+# Package manager lockfiles
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
 
-# Editor & system files
+# Editor and OS files
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 
-# Lockfiles
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
-# Git files
+# Git metadata
 .gitignore
-.github
+.github/
+
+# Backup datasets
+src/data/*-old.json
