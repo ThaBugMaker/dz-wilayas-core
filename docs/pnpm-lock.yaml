@@ -12,8 +12,8 @@ importers:
         specifier: ^5.0.5
         version: 5.0.5(vue@3.5.45(typescript@6.0.3))
       dz-wilayas-core:
-        specifier: 1.0.3
-        version: 1.0.3
+        specifier: 1.1.0
+        version: 1.1.0
       vue:
         specifier: ^3.5.44
         version: 3.5.45(typescript@6.0.3)
@@ -370,8 +370,8 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  dz-wilayas-core@1.0.3:
-    resolution: {integrity: sha512-TqjailR2EIDLYrEoVVFibhq+MvjVWFugMfjou9tB3X8AtAMr5EFl3gv30RLhSERMZz2MQk4+RK1G2YVG6aq86g==}
+  dz-wilayas-core@1.1.0:
+    resolution: {integrity: sha512-c2bb5HDpgD8KEAIsNljDC6gUqZrgOIign215LHurK/md8C1GhKHShCQci4Vn0qSGz2aVXc8JV45vWJeD+sif4g==}
 
   enhanced-resolve@5.26.1:
     resolution: {integrity: sha512-PPnnSJq3azKOIewXR/uppBV/6h98dprBJ/WaQ9Qgj10xX1lJLNfg+XShpbsrSqcDSy2yYYyhfXM1wWhftqgyzw==}
@@ -879,7 +879,7 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  dz-wilayas-core@1.0.3: {}
+  dz-wilayas-core@1.1.0: {}
 
   enhanced-resolve@5.26.1:
     dependencies:
