@@ -22,9 +22,9 @@ const copyAliasCode = () => copyText(aliasCode, aliasCopied);
 </script>
 
 <template>
-  <section id="api" class="w-full scroll-mt-8">
+  <section id="api" class="w-full scroll-mt-12">
     <!-- WilayasStore -->
-    <section id="wilayas-store" class="scroll-mt-8 mt-8">
+    <section id="wilayas-store" class="scroll-mt-18 sm:scroll-mt-8 mt-8">
       <div class="mb-4 flex items-center gap-1.5 text-xs">
         <span class="text-white/40">Docs</span>
         <Icon icon="lucide:chevron-right" class="size-3 text-white/20" />
@@ -110,7 +110,7 @@ const copyAliasCode = () => copyText(aliasCode, aliasCopied);
     </section>
 
     <!-- Methods -->
-    <section id="methods" class="mt-14 scroll-mt-8">
+    <section id="methods" class="mt-14 scroll-mt-18 sm:scroll-mt-8">
       <h2 class="text-2xl font-bold tracking-tight text-white">Methods</h2>
 
       <p class="mt-3 text-sm leading-6 text-white/55">
@@ -192,7 +192,7 @@ const copyAliasCode = () => copyText(aliasCode, aliasCopied);
     </section>
 
     <!-- Types -->
-    <section id="types" class="mt-14 scroll-mt-8">
+    <section id="types" class="mt-14 scroll-mt-18 sm:scroll-mt-8">
       <h2 class="text-2xl font-bold tracking-tight text-white">Types</h2>
 
       <p class="mt-3 text-sm leading-6 text-white/55">

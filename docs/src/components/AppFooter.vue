@@ -3,21 +3,22 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <template>
-  <footer class="border-t border-white/10 bg-surface">
+  <footer class="border-t z-40 border-white/10 bg-surface">
     <div
-      class="flex flex-col gap-3 px-8 py-4 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between lg:px-6"
+      class="flex gap-2 px-6 py-5 text-[0.48rem] sm:text-xs text-white/40 items-center justify-between"
     >
       <a
         href="https://github.com/ThaBugMaker/dz-wilayas-core"
         target="_blank"
         rel="noreferrer"
-        class="inline-flex items-center gap-2 transition hover:text-amber"
+        class="inline-flex w-fit items-center gap-2 transition hover:text-amber"
       >
-        <Icon icon="simple-icons:github" class="size-4" />
+        <Icon icon="simple-icons:github" class="size-3 sm:size-4 shrink-0" />
         Source code
-        <Icon icon="lucide:external-link" class="size-3" />
+        <Icon icon="lucide:external-link" class="size-3 shrink-0" />
       </a>
-      <p>
+
+      <p class="leading-relaxed sm:text-right">
         © 2025 - {{ new Date().getFullYear() }}
         <span class="font-medium text-white/65">ThaBugMaker</span>. Open-source
         under
@@ -25,7 +26,7 @@ import { Icon } from "@iconify/vue";
           href="https://dynamic-license.github.io/MIT?year=2025%20-%202026&owner=ThaBugMaker"
           target="_blank"
           rel="noreferrer"
-          class="transition underline underline-offset-2 hover:text-amber"
+          class="underline underline-offset-2 transition hover:text-amber"
         >
           MIT License.
         </a>

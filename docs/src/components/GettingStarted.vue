@@ -63,7 +63,7 @@ const copyCode = () => copyText(quickStart, copied);
 <template>
   <article class="w-full max-w-4xl space-y-12 text-cream">
     <!-- Introduction -->
-    <section id="introduction" class="scroll-mt-8">
+    <section id="introduction" class="scroll-mt-22 sm:scroll-mt-8">
       <div class="mb-4 flex items-center gap-1.5 text-xs">
         <span class="text-white/40">Docs</span>
         <Icon icon="lucide:chevron-right" class="size-3 text-white/20" />
@@ -102,7 +102,7 @@ const copyCode = () => copyText(quickStart, copied);
     </section>
 
     <!-- Installation -->
-    <section id="installation" class="scroll-mt-8">
+    <section id="installation" class="scroll-mt-18 sm:scroll-mt-8">
       <h2 class="text-2xl font-bold tracking-tight">Installation</h2>
 
       <p class="mt-4 leading-7 text-white/55">
@@ -146,7 +146,7 @@ const copyCode = () => copyText(quickStart, copied);
     </section>
 
     <!-- Quick Start -->
-    <section id="quick-start" class="scroll-mt-8">
+    <section id="quick-start" class="scroll-mt-18 sm:scroll-mt-8">
       <h2 class="text-2xl font-bold tracking-tight">Quick Start</h2>
 
       <p class="mt-4 leading-7 text-white/55">

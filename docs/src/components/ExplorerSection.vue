@@ -79,7 +79,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <section id="explorer" class="w-full scroll-mt-8 space-y-8">
+  <section id="explorer" class="w-full scroll-mt-18 sm:scroll-mt-8 space-y-8">
     <!-- Breadcrumb -->
     <nav class="mb-4 mt-8 flex items-center gap-1.5 text-xs">
       <span class="text-white/40">Docs</span>
@@ -126,7 +126,7 @@ onBeforeUnmount(() => {
             type="text"
             placeholder="Search wilayas..."
             autocomplete="off"
-            class="w-full rounded-lg border border-white/10 bg-white/3 py-3 pl-10 pr-24 text-sm text-cream outline-none transition placeholder:text-white/30 focus:border-sage/50"
+            class="w-full rounded-lg border border-white/10 bg-white/3 py-3 pl-10 pr-24 text-xs sm:text-sm text-cream outline-none transition placeholder:text-white/30 focus:border-sage/50"
           />
 
           <button
@@ -140,11 +140,11 @@ onBeforeUnmount(() => {
 
           <span
             v-else
-            class="absolute right-3 top-1/2 flex -translate-y-1/2 items-center gap-1.5 rounded border border-white/10 bg-white/4 px-2 py-1 text-[10px] text-white/40"
+            class="absolute right-3 top-1/2 flex -translate-y-1/2 items-center gap-1.5 rounded border border-white/10 bg-white/4 px-2 py-1 text-[0.45rem] sm:text-[10px] text-white/40"
           >
             <kbd class="text-white/50">Ctrl + K</kbd>
             <span class="text-white/20">/</span>
-            <icon icon="lucide:command" class="size-3" />
+            <icon icon="lucide:command" class="size-2" />
             <kbd class="text-white/50">K</kbd>
           </span>
 
@@ -221,7 +221,7 @@ onBeforeUnmount(() => {
     </div>
     <!-- TIP -->
     <div
-      class="mt-5 flex gap-3 rounded-md border-l-2 border-amber/60 bg-amber/4 px-4 py-3"
+      class="mt-5 hidden lg:flex gap-3 rounded-md border-l-2 border-amber/60 bg-amber/4 px-4 py-3"
     >
       <Icon icon="lucide:lightbulb" class="mt-0.5 size-4 shrink-0 text-amber" />
       <div>

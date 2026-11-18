@@ -10,6 +10,7 @@ import AppFooter from "./components/AppFooter.vue";
 import pJ from "../../package.json";
 
 const appVersion = ref(pJ.version);
+
 const sectionIds = [
   "introduction",
   "installation",
@@ -29,6 +30,7 @@ let observer: IntersectionObserver | null = null;
 let sectionElements: HTMLElement[] = [];
 let pendingSection: SectionId | null = null;
 let pendingDirection: "up" | "down" | null = null;
+
 function handleNavigationClick(event: MouseEvent) {
   const link = (event.target as HTMLElement).closest<HTMLAnchorElement>(
     'a[href^="#"]',
@@ -51,6 +53,7 @@ function handleNavigationClick(event: MouseEvent) {
   pendingSection = id;
   activeSection.value = id;
 }
+
 function updateActiveSection() {
   const main = mainContent.value;
   if (!main || !sectionElements.length) return;
@@ -75,6 +78,7 @@ function updateActiveSection() {
     pendingSection = null;
     pendingDirection = null;
   }
+
   const currentSection =
     [...sectionElements]
       .reverse()
@@ -110,7 +114,7 @@ onMounted(() => {
     .map((id) => main.querySelector<HTMLElement>(`#${id}`))
     .filter((section): section is HTMLElement => section !== null);
 
-  observer = new IntersectionObserver(() => updateActiveSection(), {
+  observer = new IntersectionObserver(updateActiveSection, {
     root: main,
     rootMargin: "0px 0px -80% 0px",
     threshold: 0,
@@ -120,12 +124,21 @@ onMounted(() => {
 
   window.addEventListener("hashchange", handleHashChange);
   document.addEventListener("click", handleNavigationClick, true);
+
   const initialHash = window.location.hash.slice(1) as SectionId;
 
   if (sectionIds.includes(initialHash)) {
-    main.querySelector<HTMLElement>(`#${initialHash}`)?.scrollIntoView({
-      block: "start",
-    });
+    const target = main.querySelector<HTMLElement>(`#${initialHash}`);
+
+    if (target) {
+      const top =
+        target.getBoundingClientRect().top -
+        main.getBoundingClientRect().top +
+        main.scrollTop;
+
+      main.scrollTo({ top, behavior: "instant" });
+    }
+
     activeSection.value = initialHash;
   } else {
     updateActiveSection();
@@ -135,29 +148,28 @@ onMounted(() => {
 onBeforeUnmount(() => {
   observer?.disconnect();
   window.removeEventListener("hashchange", handleHashChange);
-  document.addEventListener("click", handleNavigationClick, true);
+  document.removeEventListener("click", handleNavigationClick, true);
 });
 </script>
 
 <template>
-  <div class="flex h-screen flex-col bg-surface">
+  <div class="flex h-dvh flex-col bg-surface">
     <DocsHeader :app-version="appVersion" />
 
-    <div class="flex min-h-0 flex-1">
+    <div class="flex min-h-0 flex-1 overflow-hidden">
       <DocsSidebar :active-section="activeSection" />
 
       <main
         ref="mainContent"
-        class="min-w-0 flex-1 overflow-y-auto scroll-smooth"
+        class="min-h-0 min-w-0 flex-1 overflow-y-auto overscroll-contain scroll-smooth"
       >
-        <div class="w-full px-8 py-10 lg:px-10">
+        <div class="w-full px-4 py-8 sm:px-6 sm:py-10 lg:px-10">
           <GettingStarted />
           <ApiSection />
           <ExplorerSection />
         </div>
       </main>
     </div>
-
     <AppFooter />
   </div>
 </template>

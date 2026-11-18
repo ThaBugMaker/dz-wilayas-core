@@ -90,28 +90,33 @@ onMounted(() => {
 
 <template>
   <header
-    class="sticky top-0 z-50 flex h-16 shrink-0 items-center justify-between border-b border-white/10 bg-surface px-6"
+    class="sticky top-0 z-50 flex h-16 shrink-0 items-center justify-between gap-2 border-b border-white/10 bg-surface px-3 sm:px-6 scroll-mt-12"
   >
     <a
-      href="#introduction"
-      class="text-base font-bold tracking-tight text-cream"
+      href="/"
+      class="min-w-0 text-sm font-bold tracking-tight text-cream sm:text-base"
     >
       DZ Wilayas <span class="text-amber">Core</span>
-      <span class="ml-2 text-xs font-normal text-white/40">Docs</span>
-      <span class="ml-2 text-sm font-normal tracking-wider text-white/40">{{
-        `· v${appVersion ?? "1.1.0"}`
-      }}</span>
+      <span class="hidden text-xs font-normal text-white/40 sm:inline"
+        >Docs</span
+      >
+      <span
+        class="ml-1 text-xs font-normal tracking-wider text-white/40 sm:ml-2 sm:text-sm"
+      >
+        · v{{ appVersion ?? "1.1.0" }}
+      </span>
     </a>
 
-    <div class="flex items-center gap-3">
+    <div class="flex shrink-0 items-center gap-2 sm:gap-3">
       <a
         href="https://github.com/ThaBugMaker/dz-wilayas-core"
         target="_blank"
         rel="noreferrer"
-        class="inline-flex items-center gap-2 rounded-md border border-white/10 px-3 py-2 text-xs text-white/75 transition hover:border-amber/50 hover:text-amber"
+        aria-label="Star on GitHub"
+        class="inline-flex items-center gap-1.5 rounded-md border border-white/10 px-2 py-2 text-xs text-white/75 transition hover:border-amber/50 hover:text-amber sm:gap-2 sm:px-3"
       >
         <Icon icon="lucide:star" class="size-3.5" />
-        Star
+        <span class="hidden sm:inline">Star</span>
         <span class="rounded bg-white/10 px-1.5 py-0.5 text-amber">
           {{ githubStars?.toLocaleString() ?? "—" }}
         </span>
@@ -121,14 +126,15 @@ onMounted(() => {
         href="https://www.npmjs.com/package/dz-wilayas-core"
         target="_blank"
         rel="noreferrer"
-        class="inline-flex items-center gap-2 rounded-md border border-white/10 px-3 py-2 text-xs text-white/75 transition hover:border-amber/50 hover:text-amber"
+        aria-label="View package on npm"
+        class="inline-flex items-center gap-1.5 rounded-md border border-white/10 px-2 py-2 text-xs text-white/75 transition hover:border-amber/50 hover:text-amber sm:gap-2 sm:px-3"
       >
         <Icon icon="simple-icons:npm" class="size-4" />
-        npm
+        <span class="hidden sm:inline">npm</span>
         <span class="rounded bg-white/10 px-1.5 py-0.5 text-amber">
           {{ npmDownloads?.toLocaleString() ?? "—" }}
         </span>
-        <Icon icon="lucide:external-link" class="size-3" />
+        <Icon icon="lucide:external-link" class="hidden size-3 sm:block" />
       </a>
     </div>
   </header>
