@@ -2,6 +2,10 @@
 import { Icon } from "@iconify/vue";
 import { onMounted, ref } from "vue";
 
+defineProps<{
+  appVersion?: string;
+}>();
+
 const githubStars = ref<number | null>(null);
 const npmDownloads = ref<number | null>(null);
 
@@ -94,6 +98,9 @@ onMounted(() => {
     >
       DZ Wilayas <span class="text-amber">Core</span>
       <span class="ml-2 text-xs font-normal text-white/40">Docs</span>
+      <span class="ml-2 text-sm font-normal tracking-wider text-white/40">{{
+        `· v${appVersion ?? "1.1.0"}`
+      }}</span>
     </a>
 
     <div class="flex items-center gap-3">

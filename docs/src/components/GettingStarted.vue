@@ -108,8 +108,8 @@ const copyCode = () => copyText(quickStart, copied);
       <p class="mt-4 leading-7 text-white/55">
         Install
         <code class="rounded bg-white/5 px-1.5 py-1 text-sm text-sage">
-          dz-wilayas-core
-        </code>
+          dz-wilayas-core</code
+        >
         using your preferred package manager.
       </p>
 

@@ -1,18 +1,24 @@
 import { defineConfig } from "vite";
-import path from "path";
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
+  plugins: [
+    dts({
+      insertTypesEntry: true,
+      outDir: "lib",
+    }),
+  ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.ts"),
+      entry: "src/index.ts",
       name: "DzWilayasCore",
       fileName: (format) => `index.${format}.js`,
       formats: ["es", "cjs"],
     },
-    outDir: "lib", // output folder
+    outDir: "lib",
     emptyOutDir: true,
     rollupOptions: {
-      external: [], // list dependencies to exclude
+      external: [],
     },
   },
 });

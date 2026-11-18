@@ -7,6 +7,9 @@ import ExplorerSection from "./components/ExplorerSection.vue";
 import ApiSection from "./components/ApiSection.vue";
 import AppFooter from "./components/AppFooter.vue";
 
+import pJ from "../../package.json";
+
+const appVersion = ref(pJ.version);
 const sectionIds = [
   "introduction",
   "installation",
@@ -137,8 +140,8 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="flex h-screen flex-col overflow-hidden bg-surface">
-    <DocsHeader />
+  <div class="flex h-screen flex-col bg-surface">
+    <DocsHeader :app-version="appVersion" />
 
     <div class="flex min-h-0 flex-1">
       <DocsSidebar :active-section="activeSection" />

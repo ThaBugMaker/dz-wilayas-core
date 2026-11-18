@@ -27,7 +27,7 @@
   ],
   "scripts": {
     "build": "vite build",
-    "dev": "vite __test__"
+    "dev": "vite dev"
   },
   "repository": {
     "type": "git",

@@ -16,6 +16,7 @@ docs/
 tsconfig.json
 vite.config.ts
 pnpm-workspace.yaml
+netlify.toml
 
 # Package manager lockfiles
 package-lock.json
