@@ -9,7 +9,7 @@ A lightweight TypeScript library providing Algeria's wilaya and baladiya data, w
 
 **Current release:** `v1.1.0`
 
-📚 **[Official Documentation](https://dz-wilayas-core.netlify.app/#introduction)** · [npm Package](https://www.npmjs.com/package/dz-wilayas-core) · [GitHub Repository](https://github.com/ThaBugMaker/dz-wilayas-core)
+📚 **Official Documentation**: https://dz-wilayas-core.netlify.app/
 
 ---
 
